@@ -16,3 +16,12 @@ void main()
 	cout<< "el area del triangulo es: "<<endl<<area;
 	getch();
 }
+
+Proceso areadelparalelogramo
+	Escribir "poner la base: ";
+	Leer b;
+	Escribir "poner la altura: ";
+	Leer h;
+	area=(b*h)/2;
+	Escribir "el area del triangulo es: ",area;
+FinProceso
