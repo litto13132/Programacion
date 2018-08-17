@@ -14,3 +14,10 @@ void main()
 	cout<< "el area del cuadrado es: "<<endl<<area;
 	getch();
 }
+
+Proceso areadelparalelogramo
+	Escribir "poner el lado: ";
+	Leer l;
+	area=l*l;
+	Escribir "el area del cuadrado es: ",area;
+FinProceso
