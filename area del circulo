@@ -14,3 +14,10 @@ void main()
 	cout<< "el area del circulo es: "<<endl<<area;
 	getch();
 }
+
+Proceso areadelcirculo
+	Escribir "poner el radio: ";
+	Leer r;
+	area=3.1416*r*r;
+	Escribir "el area del circulo es: ",area;
+FinProceso
