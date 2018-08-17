@@ -15,7 +15,7 @@ void main()
 	getch();
 }
 
-Proceso areadelparalelogramo
+Proceso areadelcuadrado
 	Escribir "poner el lado: ";
 	Leer l;
 	area=l*l;
