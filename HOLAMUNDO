@@ -1,12 +1,5 @@
-Algoritmo HolaMundo
-	Escribir "hola mundo"
-	Escribir "soy waldo ortega"	
-FinAlgoritmo
-
-
 // hola mundo.cpp : Defines the entry point for the console application.
 //
-
 #include "stdafx.h"
 #include <iostream> 
 #include "conio.h"
@@ -17,5 +10,8 @@ void main()
 	cout<<"soy waldo ortega";
 	getch();
 }
-
 				
+Proceso holamundo
+	Escribir "hola mundo"
+	Escribir "soy waldo ortega"	
+FinProceso
