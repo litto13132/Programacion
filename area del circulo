@@ -11,6 +11,6 @@ void main()
     cout << "poner el radio: "<<endl;
 	cin >> radio;
 	area=3.1416*radio*radio;
-	cout<< "el area de un circulo es: "<<endl<<area;
+	cout<< "el area del circulo es: "<<endl<<area;
 	getch();
 }
