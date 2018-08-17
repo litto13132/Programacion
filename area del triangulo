@@ -17,7 +17,7 @@ void main()
 	getch();
 }
 
-Proceso areadelparalelogramo
+Proceso areadeltriangulo
 	Escribir "poner la base: ";
 	Leer b;
 	Escribir "poner la altura: ";
