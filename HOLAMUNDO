@@ -1,7 +1,21 @@
 Algoritmo HolaMundo
-	Escribir "bolivianos el hado propicio"
-	Escribir "corono nuestros votos y anhelos,"
-	Escribir "es ya libre, ya libre este suelo,"
-	Escribir "ya ceso su servil condicion"
+	Escribir "hola mundo"
+	Escribir "soy waldo ortega"	
 FinAlgoritmo
 
+
+// hola mundo.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream> 
+#include "conio.h"
+using namespace std;
+void main()
+{
+	cout<<"hola mundo"<<endl;
+	cout<<"soy waldo ortega";
+	getch();
+}
+
+				
