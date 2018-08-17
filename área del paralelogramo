@@ -17,4 +17,11 @@ void main()
 	getch();
 }
 
-
+Proceso areadelparalelogramo
+	Escribir "poner la base: ";
+	Leer b;
+	Escribir "poner la altura: ";
+	Leer h;
+	area=b*h;
+	Escribir "el area del paralelogramo es: ",area;
+FinProceso
