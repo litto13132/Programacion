@@ -7,12 +7,14 @@
 using namespace std;
 void main()
 {
-	float base,altura;
+	float base,altura,area;
     cout << "poner la base: "<<endl;
 	cin >> base;
 	cout << "poner la altura: "<<endl;
 	cin>> altura;
-	cout<< "el area de un paralelogramo es: "<<endl <<base*altura;
+	area=base*altura;
+	cout<< "el area del paralelogramo es: "<<endl<<area;
 	getch();
 }
+
 
