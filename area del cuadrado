@@ -11,6 +11,6 @@ void main()
     cout << "poner el lado: "<<endl;
 	cin >> lado;
 	area=lado*lado;
-	cout<< "el area de un cuadrado es: "<<endl<<area;
+	cout<< "el area del cuadrado es: "<<endl<<area;
 	getch();
 }
