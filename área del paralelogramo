@@ -1,4 +1,4 @@
-// area del rectangulo.cpp : Defines the entry point for the console application.
+// area del paralelogramo.cpp : Defines the entry point for the console application.
 //
 
 #include "stdafx.h"
@@ -12,7 +12,7 @@ void main()
 	cin >> base;
 	cout << "poner la altura: "<<endl;
 	cin>> altura;
-	cout<< "el area de un rectangulo es: "<<endl <<base*altura;
+	cout<< "el area de un paralelogramo es: "<<endl <<base*altura;
 	getch();
 }
 
