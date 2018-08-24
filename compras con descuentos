@@ -1,0 +1,133 @@
+// compra.cpp : Defines the entry point for the console applicacion//
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+int main()
+{
+	int p1, p2, p3, p4, p5, p6, producto;
+	double  dcto1, dcto2, dcto3, dcto4, dcto5, dcto6, total1, total2, total3;
+
+	cout << "Ingrese el numero de sus productos" << endl;
+	cin >> producto;
+	if (producto <= 6) {
+
+	if (producto <= 3 && producto < 7) {
+		cout << "Producto 1" << endl;
+		cin >> p1;
+		dcto1 = p1 - (p1 * 0.3);
+		cout << "\nDescuento del producto 1 es: " << dcto1 << endl << endl;
+
+		cout << "producto 2" << endl;
+		cin >> p2;
+		dcto2 = p2 - (p2 * 0.2);
+		cout << "\nDescuento del producto 2 es: " << dcto2 << endl << endl;
+
+		cout << "Producto 3" << endl;
+		cin >> p3;
+		dcto3 = p2 - (p3 * 0.1);
+		cout << "\nDescuento del producto 3 es: " << dcto3 << endl << endl;
+
+		total1 = dcto1 + dcto2 + dcto3;
+		cout << "El total de su compra es: " << total1 << endl;
+	}
+	else {
+		if (producto <= 4) {
+			cout << "Producto 1" << endl;
+			cin >> p1;
+			dcto1 = p1 - (p1 * 0.2);
+			cout << "\nDescuento del producto 1 es: " << dcto1 << endl << endl;
+
+			cout << "producto 2" << endl;
+			cin >> p2;
+			dcto2 = p2 - (p2 * 0.2);
+			cout << "\nDescuento del producto 2 es: " << dcto2 << endl << endl;
+
+			cout << "Producto 3" << endl;
+			cin >> p3;
+			dcto3 = p3 - (p3 * 0.2);
+			cout << "\nDescuento del producto 3 es: " << dcto3 << endl << endl;
+
+			cout << "Producto 4" << endl;
+			cin >> p4;
+			dcto4 = p4 - (p4 * 0.2);
+			cout << "\nDescuento del producto 4 es: " << dcto4 << endl << endl;
+
+			total1 = dcto1 + dcto2 + dcto3 + dcto4;
+			cout << "El total de su compra es: " << total1 << endl;
+		}
+			else {
+				if (producto == 5) {
+					cout << "Producto 1" << endl;
+					cin >> p1;
+					dcto1 = p1 - (p1 * 0.2);
+					cout << "\nDescuento del producto 1 es: " << dcto1 << endl << endl;
+
+					cout << "producto 2" << endl;
+					cin >> p2;
+					dcto2 = p2 - (p2 * 0.2);
+					cout << "\nDescuento del producto 2 es: " << dcto2 << endl << endl;
+
+					cout << "Producto 3" << endl;
+					cin >> p3;
+					dcto3 = p3 - (p3 * 0.2);
+					cout << "\nDescuento del producto 3 es: " << dcto3 << endl << endl;
+
+					cout << "Producto 4" << endl;
+					cin >> p4;
+					dcto4 = p4 - (p4 * 0.2);
+					cout << "\nDescuento del producto 4 es: " << dcto4 << endl << endl;
+
+					cout << "Producto 5" << endl;
+					cin >> p5;
+					dcto5 = p5 - (p5 * 0.2);
+					cout << "\nDescuento del producto 5 es: " << dcto5 << endl << endl;
+
+					total2 = dcto1 + dcto2 + dcto3 + dcto4 + dcto5;
+					cout << "El total de su compra es: " << total2 << endl;
+				}
+				else {
+					cout << "Producto 1" << endl;
+					cin >> p1;
+					dcto1 = p1 - (p1 * 0.2);
+					cout << "\nDescuento del producto 1 es: " << dcto1 << endl << endl;
+
+					cout << "producto 2" << endl;
+					cin >> p2;
+					dcto2 = p2 - (p2 * 0.2);
+					cout << "\nDescuento del producto 2 es: " << dcto2 << endl << endl;
+
+					cout << "Producto 3" << endl;
+					cin >> p3;
+					dcto3 = p3 - (p3 * 0.2);
+					cout << "\nDescuento del producto 3 es: " << dcto3 << endl << endl;
+
+					cout << "Producto 4" << endl;
+					cin >> p4;
+					dcto4 = p4 - (p4 * 0.2);
+					cout << "\nDescuento del producto 4 es: " << dcto4 << endl << endl;
+
+					cout << "Producto 5" << endl;
+					cin >> p5;
+					dcto5 = p5 - (p5 * 0.2);
+					cout << "\nDescuento del producto 5 es: " << dcto5 << endl << endl;
+
+					cout << "Producto 6" << endl;
+					cin >> p6;
+					dcto6 = p6 - (p6 * 0.2);
+					cout << "\nDescuento del producto 6 es: " << dcto6 << endl << endl;
+
+					total3 = dcto1 + dcto2 + dcto3 + dcto4 + dcto5 + dcto6;
+					cout << "El total de su compra es: " << total3 << endl;
+				}
+					}
+				}
+		}
+		
+		getch();
+	return 0;
+	
+	}
