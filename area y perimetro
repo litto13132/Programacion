@@ -17,10 +17,10 @@ void main()
 }
 
 Proceso radioypperimetro
-	Escribir "ponga el radio: "
-	Leer radio
-	perimetro<-2*3.1416*radio
-	Escribir "el perimetro es: ",perimetro
-	area<-3.1416*radio*radio
-	Escribir "el area es: ",area
+	Escribir "ponga el radio: ";
+	Leer radio;
+	perimetro<-2*3.1416*radio;
+	Escribir "el perimetro es: ",perimetro;
+	area<-3.1416*radio*radio;
+	Escribir "el area es: ",area;
 FinProceso
