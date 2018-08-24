@@ -1,0 +1,17 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	float radio , perimetro , area;
+	cout<<"poner el radio: "<<endl;
+	cin>>radio;
+	perimetro=2*3.1416*radio;
+	cout<<"el preimetro del circulo es: "<<endl<<perimetro<<endl;
+	area=3.1416*radio*radio;
+	cout<<"el area del circulo es: "<<endl<<area;
+	getch();
+}
