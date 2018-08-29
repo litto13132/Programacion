@@ -49,8 +49,8 @@
 	getch();
 }
 
- Pseudocodigo
- Proceso TresPuntos
+Pseudocodigo
+Proceso TresPuntos
 	Escribir "ingresar x1: ";
 	leer x1;
 	Escribir "ingresar y1: ";
@@ -71,20 +71,21 @@
 	e2 <- y2*1;
 	e3 <- y3*1;
 	
-	restecu1 <- (x1*x1)+(y1*y1);
-	restecu2 <- (x2*x2)+(y2*y2);
-	restecu3 <- (x3*x3)+(y3*y3);
+	restecu1 <- -((x1*x1)+(y1*y1));
+	restecu2 <- -((x2*x2)+(y2*y2));
+	restecu3 <- -((x3*x3)+(y3*y3));
 	
 	determinantePrincipal <- (d1*e2*1)+(e1*1*d3)+(1*d2*e3)-(d3*e2*1)-(e3*1*d1)-(1*d2*e1);
 	determinanteD <- (restecu1*e2*1)+(e1*1*restecu3)+(1*restecu2*e3)-(restecu3*e2*1)-(e3*1*restecu1)-(1*restecu2*e1);
 	determinanteE <- (d1*restecu2*1)+(restecu1*1*d3)+(1*d2*restecu3)-(d3*restecu2*1)-(restecu3*1*d1)-(1*d2*restecu1);
 	determinanteF <- (d1*e2*restecu3)+(e1*restecu2*d3)+(restecu1*d2*e3)-(d3*e2*restecu1)-(e3*restecu2*d1)-(restecu3*d2*e1);
 	
-	determinanteD <- -(determinanteD/determinantePrincipal);
-	determinanteE <- -(determinanteE/determinantePrincipal);
-	determinanteF <- -(determinanteF/determinantePrincipal);
+	determinanteD <- (determinanteD/determinantePrincipal);
+	determinanteE <- (determinanteE/determinantePrincipal);
+	determinanteF <- (determinanteF/determinantePrincipal);
 	
 	Escribir "El centro es: ", "(",-determinanteD/2,", " ,-determinanteE/2, ")";
 	radio <- 0.5*rc((determinanteD*determinanteD) + (determinanteE*determinanteE)- (4*determinanteF));
 	Escribir "El radio es: ", radio ;
 FinProceso
+
