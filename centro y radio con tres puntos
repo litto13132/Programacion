@@ -1,0 +1,90 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+ using namespace std;
+ void main()
+{
+	float d1, d2, d3, e1, e2, e3, x1, x2, x3, y1, y2, y3;
+	float restecu1, restecu2, restecu3;
+	float determinantePrincipal, determinanteD, determinanteE, determinanteF;
+//Peticion de variables
+	cout<<"Ingrese el dato de x1: ";
+	cin>>x1;
+	cout<<"Ingrese el dato de y1: ";
+	cin>>y1;
+	cout<<"Ingrese el dato de x2: ";
+	cin>>x2;
+	cout<<"Ingrese el dato de y2: ";
+	cin>>y2;
+	cout<<"Ingrese el dato de x3: ";
+	cin>>x3;
+	cout<<"Ingrese el dato de y3: ";
+	cin>>y3;
+// Valores de D
+	d1 = x1*1;
+	d2 = x2*1;
+	d3 = x3*1;
+// Valores de E
+	e1 = y1*1;
+	e2 = y2*1;
+	e3 = y3*1;
+// variable sin incognita del SEL
+	restecu1 = -(pow(x1,2)+pow(y1, 2));
+	restecu2 = -(pow(x2,2)+pow(y2, 2));
+	restecu3 = -(pow(x3,2)+pow(y3, 2));
+//Sacar la determinante (Operaciones)
+	determinantePrincipal = (d1*e2*1)+(e1*1*d3)+(1*d2*e3)-(d3*e2*1)-(e3*1*d1)-(1*d2*e1);
+	determinanteD = (restecu1*e2*1)+(e1*1*restecu3)+(1*restecu2*e3)-(restecu3*e2*1)-(e3*1*restecu1)-(1*restecu2*e1);
+	determinanteE = (d1*restecu2*1)+(restecu1*1*d3)+(1*d2*restecu3)-(d3*restecu2*1)-(restecu3*1*d1)-(1*d2*restecu1);
+	determinanteF = (d1*e2*restecu3)+(e1*restecu2*d3)+(restecu1*d2*e3)-(d3*e2*restecu1)-(e3*restecu2*d1)-(restecu3*d2*e1);
+ //utimos calculos
+	determinanteD = determinanteD/determinantePrincipal;
+	determinanteE = determinanteE/determinantePrincipal;
+	determinanteF = determinanteF/determinantePrincipal;
+//Calculo para el centro
+	cout<<"El centro es: ("<<-(determinanteD/2)<<", "<<-(determinanteE/2)<<")"<<endl;
+//Calculo para radio
+	cout<<"El radio es: "<<0.5*sqrt(pow(determinanteD,2)+pow(determinanteE,2)-(4*determinanteF))<<endl;
+	getch();
+}
+
+ Pseudocodigo
+ Proceso TresPuntos
+	Escribir "ingresar x1: ";
+	leer x1;
+	Escribir "ingresar y1: ";
+	leer y1;
+	Escribir "ingresar x2: ";
+	leer x2;
+	Escribir "ingresar y2: ";
+	leer y2;
+	Escribir "ingresar x3: ";
+	leer x3;
+	Escribir "ingresar y3: ";
+	leer y3;
+	d1 <- x1*1;
+	d2 <- x2*1;
+	d3 <- x3*1;
+	
+	e1 <- y1*1;
+	e2 <- y2*1;
+	e3 <- y3*1;
+	
+	restecu1 <- (x1*x1)+(y1*y1);
+	restecu2 <- (x2*x2)+(y2*y2);
+	restecu3 <- (x3*x3)+(y3*y3);
+	
+	determinantePrincipal <- (d1*e2*1)+(e1*1*d3)+(1*d2*e3)-(d3*e2*1)-(e3*1*d1)-(1*d2*e1);
+	determinanteD <- (restecu1*e2*1)+(e1*1*restecu3)+(1*restecu2*e3)-(restecu3*e2*1)-(e3*1*restecu1)-(1*restecu2*e1);
+	determinanteE <- (d1*restecu2*1)+(restecu1*1*d3)+(1*d2*restecu3)-(d3*restecu2*1)-(restecu3*1*d1)-(1*d2*restecu1);
+	determinanteF <- (d1*e2*restecu3)+(e1*restecu2*d3)+(restecu1*d2*e3)-(d3*e2*restecu1)-(e3*restecu2*d1)-(restecu3*d2*e1);
+	
+	determinanteD <- -(determinanteD/determinantePrincipal);
+	determinanteE <- -(determinanteE/determinantePrincipal);
+	determinanteF <- -(determinanteF/determinantePrincipal);
+	
+	Escribir "El centro es: ", "(",-determinanteD/2,", " ,-determinanteE/2, ")";
+	radio <- 0.5*rc((determinanteD*determinanteD) + (determinanteE*determinanteE)- (4*determinanteF));
+	Escribir "El radio es: ", radio ;
+FinProceso
