@@ -1,0 +1,24 @@
+// whilesalario.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main() {
+	float sm=2060,salariobruto,salarioneto;
+	cout<<"escriba el salario bruto: ";
+	cin>>salariobruto;
+	while (salariobruto-999)
+	{
+		if(salariobruto>=4*sm){
+		  salarioneto=salariobruto-0.251*salariobruto;
+		}else
+		{	salarioneto=salariobruto-0.121*salariobruto;
+		}
+		cout<<"el salario es: "<<salarioneto;
+		cin>>salariobruto;
+	}
+	getch();
+}
+		
