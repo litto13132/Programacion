@@ -1,0 +1,36 @@
+// examen ejercicio 1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main ()
+{
+	int numbolita;
+	float preciototal;
+	do {
+		cout<<"ingresar el numero de bolita: ";
+		cin>>numbolita;
+	}while (numbolita<0);
+	do{
+		cout<<"ingresar el precio: ";
+		cin>>preciototal;
+	}while(preciototal<=0);
+	if (numbolita==3)
+		cout<<"el precio es: "<<preciototal;
+	else
+		if (numbolita==5)
+			cout<<"el precio es: "<<preciototal*0.95;
+		else
+			if (numbolita==7)
+				cout<<"el precio es: "<<preciototal*0.8;
+			else
+				if (numbolita==9)
+					cout<<"el precio es: "<<preciototal*0.5;
+				else
+					cout<<"no hay un numero de bolita valido";
+	getch();
+}
+
