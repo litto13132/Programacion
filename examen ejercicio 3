@@ -1,0 +1,28 @@
+// examen ejercicio 3.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main ()
+{
+	int numcamisas;
+	float preciototal, totalapagarcondcto;
+	do {
+		cout<<"ingresar el numero de camisas: ";
+		cin>>numcamisas;
+	}while (numcamisas<0);
+	do{
+		cout<<"ingresar el precio de las camisas: ";
+		cin>>preciototal;
+	}while(preciototal<=0);
+	if (numcamisas<=5)
+		totalapagarcondcto=numcamisas*preciototal*0.8;
+	else
+		totalapagarcondcto=numcamisas*preciototal*0.7;
+	cout<<"el total a pagar con descuento es: "<<totalapagarcondcto;
+	getch();
+}
+
