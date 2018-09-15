@@ -1,0 +1,29 @@
+// salariobolivia.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main()
+{	
+	float salarioenbruto,n,descuento,salarioneto,sm=2060;
+	cout<<"numero de empleados: "<<endl;
+	cin>>n;
+	for (int i=1;i<=n;i++)
+	{	cout<<"Ingrese el sueldo"<<endl;
+	    cin>>salarioenbruto;
+		if (salarioenbruto>=4*sm)
+		{
+			descuento = 0.251*salarioenbruto;
+			salarioneto=salarioenbruto-descuento;
+			cout<<"el salario neto es: "<<salarioneto<<endl;
+		}	else
+			{
+			descuento = 0.121*salarioenbruto;
+			salarioneto=salarioenbruto-descuento;
+		    cout<<"el salario neto es: "<<salarioneto<<endl;
+			}
+	}
+	getch();
+}
