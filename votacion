@@ -1,0 +1,42 @@
+// votaciones.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main() {	
+	int edad;
+	int n, antecedente, nacionalidad, elecciones; 
+	do {
+	cout<<"¿uantos años tiene?"<<endl;
+	cin>>edad;
+	if (edad >= 18)
+	{
+		cout<<"Tienen antecedentes?"<<endl;
+		cin>>antecedente;
+		if (antecedente == 1) {
+			cout<<"¿nacio en bolivia?"<<endl;
+			cin>>nacionalidad;
+			if(nacionalidad == 1) {
+				cout<<"Usted puede votar";
+			} else {
+			cout<<"¿son presidenciales?"<<endl;
+			cin>>elecciones;
+				if (elecciones == 1) {
+				cout<<"puede votar en elecciones municipales";
+				} else {
+				cout<<"usted puede votar";
+				}
+			}
+		} else {
+		cout<<"no puedes votar";
+		}
+	} else {
+	cout<<"no puedes votar";
+	}
+	cout<<"¿alguien desea saber si puede votar? ";
+	cin>>n;
+	} while (n != -999);
+	getch();
+}
