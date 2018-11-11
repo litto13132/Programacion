@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "string" 
+using namespace std;
+bool pal(string cadena);
+
+void main()
+{
+string cadena;
+cout<<"escriba la cadena: "<<endl;
+getline(cin,cadena);
+pal(cadena);
+if (pal(cadena)==true)
+	cout<<"es palindromo";
+else
+	cout<<"no es palindromo";
+getch();
+	
+}
+bool pal(string cadena){
+bool x=true;
+int lon=cadena.length();
+for (int i=0;i<lon;i++)
+	if (cadena.at(i)!=cadena.at(lon-1-i))
+		return false;
+	else
+		return x;
+}
+
