@@ -1,0 +1,26 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <string>
+
+using namespace std;
+void mayuscula(string &frase);
+void main(){
+string frase;
+cout<<"Ingrese la frase: ";
+getline(cin,frase);
+mayuscula(frase);
+cout<<frase;
+getch();
+}
+
+void mayuscula(string &frase){
+char aux;
+	for (int i =0;i < frase.length()-1; i++)
+		for (int j =1 ;j < frase.length(); j++)
+			if(frase.at(i)>frase.at(j)){
+				aux=frase.at(i);
+				frase.at(i)=frase.at(j);
+				frase.at(j)=aux;
+			}	
+}
